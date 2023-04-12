@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+footer .container .noi-dung {
+    width: calc(100%/3);
+}
+
+footer .container .noi-dung.about {
+    /* width: ;
+    float: right; */
+}
+
+footer .container .noi-dung.about h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .noi-dung.about h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .noi-dung.about p {
+    color: #999;
+}
+
+.form button {
+    background-color: #222;
+    color: #999;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form button:hover {
+    background-color: red;
+    color: black;
+}
+
+.form1 button {
+    background-color: #222;
+    color: #999;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form1 button:hover {
+    background-color: red;
+    color: black;
+}
+
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+.social-icon {
+    margin-top: 20px;
+    display: flex;
+}
+
+.social-icon li {
+    list-style: none;
+}
+
+.social-icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-icon li a:hover {
+    background: #f00;
+}
+
+.social-icon li a .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+.links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.links {
+    position: relative;
+    display: block;
+
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a:hover {
+    color: #fff;
+}
+
+.contact h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.contact {
+
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+@media (max-width: 740px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container .noi-dung.about {
+        width: 80%;
+    }
+
+    footer .container .noi-dung.links {
+        width: 80%;
+    }
+
+    footer .container .noi-dung.contact {
+        width: 80%;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container .noi-dung {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container,
+    .noi-dung.about,
+    .links,
+    .contact {
+        width: 100%;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    #menunho {}
+
+}
+
+@media (min-width: 740px)and (max-width: 1023px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container .noi-dung.about {
+        width: 80%;
+    }
+
+    footer .container .noi-dung.links {
+        width: 80%;
+    }
+
+    footer .container .noi-dung.contact {
+        width: 80%;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container .noi-dung {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container,
+    .noi-dung.about,
+    .links,
+    .contact {
+        width: 100%;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    #menunho {}
+
+}
+
+@media all and (min-width: 992px) {
+    footer .container .noi-dung.links h2 {
+        margin-left: 20%;
+    }
+
+    footer .container .noi-dung.links li {
+        margin-left: 20%;
+    }
+
+}
